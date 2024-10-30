@@ -52,6 +52,7 @@ helper = new PenghitungUmurHelper();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Aplikasi Penghitung Umur ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 24))); // NOI18N
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
         txtUmur.addActionListener(new java.awt.event.ActionListener() {
@@ -64,6 +65,7 @@ helper = new PenghitungUmurHelper();
         gridBagConstraints.gridy = 1;
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(12, 9, 12, 9);
         jPanel1.add(txtUmur, gridBagConstraints);
 
         txtHariUlangTahunBerikutnya.addActionListener(new java.awt.event.ActionListener() {
@@ -76,6 +78,7 @@ helper = new PenghitungUmurHelper();
         gridBagConstraints.gridy = 2;
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(15, 9, 15, 9);
         jPanel1.add(txtHariUlangTahunBerikutnya, gridBagConstraints);
 
         dateChooserTanggalLahir.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
@@ -88,8 +91,10 @@ helper = new PenghitungUmurHelper();
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.ipadx = 50;
+        gridBagConstraints.insets = new java.awt.Insets(9, 9, 9, 9);
         jPanel1.add(dateChooserTanggalLahir, gridBagConstraints);
 
+        jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton3.setText("Hitung Umur");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,9 +106,10 @@ helper = new PenghitungUmurHelper();
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.ipadx = 15;
-        gridBagConstraints.insets = new java.awt.Insets(2, 7, 2, 7);
+        gridBagConstraints.insets = new java.awt.Insets(11, 16, 11, 16);
         jPanel1.add(jButton3, gridBagConstraints);
 
+        jButton4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton4.setText("Keluar");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,9 +120,10 @@ helper = new PenghitungUmurHelper();
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.ipadx = 15;
-        gridBagConstraints.insets = new java.awt.Insets(0, 7, 0, 7);
+        gridBagConstraints.insets = new java.awt.Insets(9, 16, 9, 16);
         jPanel1.add(jButton4, gridBagConstraints);
 
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel4.setText("Pilih Tanggal Lahir");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -124,9 +131,10 @@ helper = new PenghitungUmurHelper();
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.ipadx = 12;
-        gridBagConstraints.insets = new java.awt.Insets(12, 11, 12, 11);
+        gridBagConstraints.insets = new java.awt.Insets(25, 24, 25, 24);
         jPanel1.add(jLabel4, gridBagConstraints);
 
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel5.setText("Umur Anda");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -134,9 +142,10 @@ helper = new PenghitungUmurHelper();
         gridBagConstraints.gridy = 1;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.ipadx = 12;
-        gridBagConstraints.insets = new java.awt.Insets(12, 11, 12, 11);
+        gridBagConstraints.insets = new java.awt.Insets(21, 20, 21, 20);
         jPanel1.add(jLabel5, gridBagConstraints);
 
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel6.setText("Hari Ulang Tahun Berikutnya");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -144,7 +153,8 @@ helper = new PenghitungUmurHelper();
         gridBagConstraints.gridy = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.ipadx = 12;
-        gridBagConstraints.insets = new java.awt.Insets(12, 11, 12, 11);
+        gridBagConstraints.ipady = 2;
+        gridBagConstraints.insets = new java.awt.Insets(27, 24, 27, 24);
         jPanel1.add(jLabel6, gridBagConstraints);
 
         txtAreaPeristiwa.setColumns(20);
@@ -155,7 +165,7 @@ helper = new PenghitungUmurHelper();
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 839, Short.MAX_VALUE)
+            .addComponent(jScrollPane1)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -167,20 +177,18 @@ helper = new PenghitungUmurHelper();
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
                 .addGap(20, 20, 20)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 839, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
+                .addGap(28, 28, 28)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
@@ -215,8 +223,7 @@ helper = new PenghitungUmurHelper();
         String tanggalUlangTahunBerikutnya = 
         ulangTahunBerikutnya.format(formatter); 
         txtHariUlangTahunBerikutnya.setText(hariUlangTahunBerikutnya + " (" + tanggalUlangTahunBerikutnya + ")"); 
-             
-}           
+                 
         // Set stop flag untuk thread sebelumnya 
         stopFetching = true; 
         if (peristiwaThread != null && peristiwaThread.isAlive()) { 
@@ -230,8 +237,7 @@ helper = new PenghitungUmurHelper();
         peristiwaThread = new Thread(() -> { 
             try { 
         txtAreaPeristiwa.setText("Tunggu, sedang mengambil data...\n"); 
-        helper.getPeristiwaBarisPerBaris(hariUlangTahunBerikutnya, 
-        txtAreaPeristiwa, () -> stopFetching); 
+        helper.getPeristiwaBarisPerBaris(ulangTahunBerikutnya, txtAreaPeristiwa, () -> stopFetching); 
         if (!stopFetching) { 
             javax.swing.SwingUtilities.invokeLater(() -> 
         txtAreaPeristiwa.append("Selesai mengambil data peristiwa")); 
@@ -243,7 +249,8 @@ helper = new PenghitungUmurHelper();
         } 
     } 
     }); 
-        peristiwaThread.start();     // TODO add your handling code here:
+        peristiwaThread.start();     
+    }// TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
